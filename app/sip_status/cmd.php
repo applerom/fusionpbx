@@ -60,8 +60,10 @@ else {
 
 		//memcache flush
 			if ($cmd == "api memcache flush") {
+				fclose($fp);
 				$cache = new cache;
 				$cache->flush();
+				return;
 			}
 
 		//reloadacl
