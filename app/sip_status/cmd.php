@@ -72,6 +72,10 @@ else {
 				$response = event_socket_request($fp, $cmd);
 				unset($cmd);
 			}
+		//restart freeswitch cluster
+			if ($cmd == "restart freeswitch cluster") {
+				$response = event_socket_request($fp, $cmd);
+			}
 
 		//sofia profile
 			if (substr($cmd, 0, 17) == "api sofia profile") {
