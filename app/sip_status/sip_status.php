@@ -249,6 +249,7 @@ if ($_GET['a'] == "download") {
 					echo "  <input type='button' class='btn' value='".$text['button-stop']."' onclick=\"document.location.href='cmd.php?cmd=api+sofia+profile+".$sip_profile_name."+stop';\" />\n";
 				}
 				echo "  <input type='button' class='btn' value='".$text['button-restart']."' onclick=\"document.location.href='cmd.php?cmd=api+sofia+profile+".$sip_profile_name."+restart';\" />\n";
+				echo "  <input type='button' class='btn' value='".$text['button-restart-cluster']."' onclick=\"document.location.href='cmd.php?cmd=restart+freeswitch+cluster';\" />\n";
 				echo "  <input type='button' class='btn' value='".$text['button-rescan']."' onclick=\"document.location.href='cmd.php?cmd=api+sofia+profile+".$sip_profile_name."+rescan';\" />\n";
 				echo "</td>\n";
 				echo "</tr>\n";
