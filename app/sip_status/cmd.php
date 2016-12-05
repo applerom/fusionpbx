@@ -60,6 +60,7 @@ else {
 
 		//memcache flush
 			if ($cmd == "api memcache flush") {
+				unset($cmd);
 				fclose($fp);
 				$cache = new cache;
 				$cache->flush();
